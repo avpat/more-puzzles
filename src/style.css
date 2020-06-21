@@ -1,4 +1,21 @@
-.prime-numbers {
-    color: red;
+
+
+.primeNumberResults {
+    margin-top: 10px;
+    background-color: #333;
+    color: #ffffff;
+    padding: 2em;
+    max-width: 1200px;
+}
+
+.prime-number:first-child {
+    padding: 10px;
     border: 2px solid green;
+}
+
+.prime-number:not(:first-child) {
+    padding: 10px;
+    border-top: 2px solid green;
+    border-bottom: 2px solid green;
+    border-right: 2px solid green;
 }
