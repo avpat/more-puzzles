@@ -1,6 +1,7 @@
 function findPrimeNumbers(n = 100) {
     let results = printPrimaryNumbers(n);
     let resultContainer = document.getElementsByClassName("primeNumberResults")[0];
+    resultContainer.innerHTML = '';
     results.forEach(element => {
         let span = document.createElement("span");
         span.innerText = element;
