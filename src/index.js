@@ -1,4 +1,9 @@
-function findPrimeNumbers(n = 100) {
+function findPrimeNumbers() {
+    const n = prompt('Enter a number'); 
+
+    if(isNaN(n)) {
+        alert("Please enter numeric value");
+    }
     let results = printPrimaryNumbers(n);
     let resultContainer = document.getElementsByClassName("primeNumberResults")[0];
     resultContainer.innerHTML = '';
@@ -7,7 +12,7 @@ function findPrimeNumbers(n = 100) {
         span.innerText = element;
         span.classList.add("prime-number");
         resultContainer.append(span);
-    });
+    });         
 }
 
 function printPrimaryNumbers(n) {
