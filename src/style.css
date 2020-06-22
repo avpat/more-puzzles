@@ -1,6 +1,8 @@
 
-
-.primeNumberResults {
+section {
+    margin-top: 10px;
+}
+.primeNumberResults, .dictionaryResults {
     margin-top: 10px;
     background-color: #333;
     color: #ffffff;

@@ -48,3 +48,29 @@ function printPrimaryNumbers(n) {
     }
     return output;
 }
+
+
+function findDictinaryWord (){
+
+    //dictionary works in key val pair
+    let d1 = {
+        'namaste' : "showing respect",
+        'shallom' : "Hello",
+        'hello'   : "greetings",  
+    };
+    const word = prompt('Enter a greeting word'); 
+
+    if(typeof(word) !== 'string') {
+        alert("Please enter hello value");
+    }
+
+    let result = typeof(d1[word]) === 'string'? d1[word]: "Result not found";
+    let resultContainer = document.getElementsByClassName("dictionaryResults")[0];
+    resultContainer.innerHTML = '';
+    
+    let span = document.createElement("span");
+    span.innerText = result;
+    span.classList.add("dictionary-word");
+    resultContainer.append(span);
+     
+}
